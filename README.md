@@ -1,4 +1,4 @@
-# BakaBoard ![edit on replit](https://img.shields.io/badge/edit%20on-replit-blue)
+# BakaBoard [![edit on replit](https://img.shields.io/badge/edit%20on-replit-blue)](https://replit.com/@Stylix58/bakaboard)
 Funny open-source images board.
 
 ## Install
