@@ -1,6 +1,7 @@
 const express = require("express");
 const expressLayouts = require("express-ejs-layouts");
 const bodyParser = require('body-parser');
+const ejs = require('ejs');
 const db = require("quick.db");
 const app = express();
 
