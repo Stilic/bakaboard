@@ -1,4 +1,4 @@
-<h1>~~BakaBoard~~</h1>
+<h1>BakaBoard</h1>
 <div class="addbox">
 	<h2>add a post</h2>
 	<form method="post" action="/api/add">
@@ -10,5 +10,17 @@
     <br />
     <button type="submit">submit</button>
 	</form>
-</form>
 </div>
+<h2>the most funnier posts</h2>
+<div class="post">
+  <p class="little">posted by anonymous - today</p>
+  <h3>haha funni post</h3>
+  <div class="content"><p>Funni text with dhjezçàedezfçefirf</p></div>
+</div>
+<% for (const post in db.all()) { %>
+  <div class="post">
+    <p class="little">posted by <% post["author"] %></p>
+    <h3><% post["title"] %></h3>
+    <div class="content"><% post["content"] %></div>
+  </div>
+<% } %>
