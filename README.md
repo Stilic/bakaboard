@@ -1,5 +1,5 @@
-# BakaBoard
-Funni open source images board
+# BakaBoard ![edit on replit](https://img.shields.io/badge/edit%20on-replit-blue)
+Funny open-source images board.
 
 ## Install
 ```sh
@@ -12,4 +12,4 @@ npm start
 ```
 
 ## License
-This repository is licensed under the [MIT license](LICENSE)
+This repository is licensed under the [MIT license](LICENSE).

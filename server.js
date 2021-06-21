@@ -7,7 +7,8 @@ const app = express();
 app.use(expressLayouts);
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json())
-app.set("view engine", "ejs");
+app.set('view engine', 'html');
+app.engine('html', ejs.renderFile);
 const port = 3000 || process.env.port;
 
 app.use(express.static("public"));
