@@ -12,15 +12,11 @@
 	</form>
 </div>
 <h2>the most funnier posts</h2>
-<div class="post">
-  <p class="little">posted by anonymous - today</p>
-  <h3>haha funni post</h3>
-  <div class="content"><p>Funni text with dhjezçàedezfçefirf</p></div>
-</div>
-<% for (const post in db.all()) { %>
-  <div class="post">
-    <p class="little">posted by <% post["author"] %></p>
-    <h3><% post["title"] %></h3>
-    <div class="content"><% post["content"] %></div>
-  </div>
-<% } %>
+<% db.all().forEach(function(post){ %>
+    <% p = db.get(post["ID"]) %>
+    <div class="post">
+      <p class="little">posted by <%= p["author"] %></p>
+      <h3><%= p["title"] %></h3>
+      <div class="content"><%= p["content"] %></div>
+    </div>
+<% }); %>
