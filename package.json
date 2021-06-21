@@ -1,0 +1,26 @@
+{
+  "name": "bakaboard",
+  "version": "1.0.0",
+  "description": "Funni open source images board",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stylix58/bakaboard.git"
+  },
+  "author": "Stylix58",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Stylix58/bakaboard/issues"
+  },
+  "homepage": "https://github.com/Stylix58/bakaboard#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.1",
+    "quick.db": "^7.1.3"
+  }
+}
