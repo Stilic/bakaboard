@@ -16,3 +16,11 @@ body {
 .addbox {
   border: thick double #32a1ce;
 }
+
+br {
+  user-select: none;
+}
+
+input, form textarea, form button {
+  margin-bottom: 0.5em;
+}
