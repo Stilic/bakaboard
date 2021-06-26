@@ -1,4 +1,4 @@
-<h1>BakaBoard</h1>
+<h1>bakaboard</h1>
 <div class="addbox">
 	<h2>add a post</h2>
 	<form method="post" action="/api/add">
@@ -11,12 +11,13 @@
     <button type="submit">submit</button>
 	</form>
 </div>
-<h2>the most funnier posts</h2>
+<h2>posts</h2>
 <% db.all().forEach(function(post){ %>
-    <% p = db.get(post["ID"]) %>
+  <% db.get(post["ID"]).forEach(function(p){ %>
     <div class="post">
       <p class="little">posted by <%= p["author"] %></p>
       <h3><%= p["title"] %></h3>
       <div class="content"><%= p["content"] %></div>
     </div>
+  <% }); %>
 <% }); %>
